@@ -61,6 +61,7 @@ nav #links {
 }
 
 #sun {
+  display: none;
   width: 20rem;
   height: 20rem;
   background: white;
@@ -90,4 +91,12 @@ nav #links {
   color: rgb(0, 0, 0);
   text-align: center;
   font-size: 14rem;
+}
+
+.layers {
+  bottom: 0;
+  width: 100vw;
+  position: fixed;
+  height: 10rem;
+  background: linear-gradient(to top, red, orange);
 }

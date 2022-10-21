@@ -59,6 +59,7 @@ nav{
     display: flex;
 }
 #sun{
+    display: none;  //remove this to remove the sun
     width: 20rem;
     height: 20rem;
     background: white;
@@ -88,8 +89,17 @@ h1{
     text-align: center;
     font-size: 14rem;
 }
-.circle{
-    
+
+
 }
+
+.layers{
+
+    bottom:  0;
+    width: 100vw;
+
+position: fixed;
+height: 10rem;
+background: linear-gradient(to top ,red,orange);
 
 }
