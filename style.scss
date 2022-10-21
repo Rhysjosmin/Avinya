@@ -18,6 +18,7 @@
     min-width: 5rem;
     border-radius: 50%;
 }
+
 nav{
     overflow: hidden;
     display: flex;
@@ -58,10 +59,10 @@ nav{
     display: flex;
 }
 #sun{
-    box-shadow: 0vh 0vh 10rem 1rem rgb(255, 162, 0);
     width: 20rem;
     height: 20rem;
     background: white;
+    box-shadow: rgb(255, 162, 0) 0vh 0vh 10rem 2rem;
 }
 #top{
     

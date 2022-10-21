@@ -61,10 +61,10 @@ nav #links {
 }
 
 #sun {
-  box-shadow: 0vh 0vh 10rem 1rem rgb(255, 162, 0);
   width: 20rem;
   height: 20rem;
   background: white;
+  box-shadow: rgb(255, 162, 0) 0vh 0vh 10rem 2rem;
 }
 
 #top {
@@ -90,4 +90,4 @@ nav #links {
   color: rgb(0, 0, 0);
   text-align: center;
   font-size: 14rem;
-}/*# sourceMappingURL=style.css.map */
+}

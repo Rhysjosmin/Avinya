@@ -1,14 +1,15 @@
 const sun=document.getElementById('sun');
 const body = document.querySelector('body')
-
+movesun()
 window.addEventListener("scroll",function(){
     movesun(window.scrollY);
 });
 
 function movesun(a){
     y=a/(window.innerHeight/150)
-    sun.style.transform=`translateX(${y}px) translateY(${Math.sin((y/500)+(Math.PI/2))*100+200}px)`
+    sun.style.transform=`translateX(${y}%) translateY(${(Math.sin(y/100+3.14/2)*100)-50}%)`
 }
+
 
 //move linearly on x 
 //x= window position y  remapped 
