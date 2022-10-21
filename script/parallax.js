@@ -1,9 +1,12 @@
-const layer1 =document.getElementById('l1')
-const layer2 =document.getElementById('l2')
-const layer3 =document.getElementById('l3')
+const layer =document.getElementsByClassName('clouds')
+const text =document.getElementById('AVINYA')
 
 
-parallax()
+
+parallax(window.scrollY)
+parallax(window.scrollY)
+parallax(window.scrollY)
+parallax(window.scrollY)
 window.addEventListener("scroll",function(){
     parallax(window.scrollY);
     console.log('e')
@@ -11,9 +14,19 @@ window.addEventListener("scroll",function(){
 
 function parallax(a){
     console.log(a)
-    y=a
-    layer1.style.transform=`translateX(${0}) translateY(${-y*1.1}%)`
-    layer2.style.transform=`translateX(${0}) translateY(${-y}%)`
-    layer3.style.transform=`translateX(${0}) translateY(${Math.sin(-y/100)*100}%)`
+    y=a/10
+    layer[0].style.transform=`translateX(${0}) translateY(${-(y/8)}%)`
+    layer[1].style.transform=`translateX(${0}) translateY(${-y/4}%)`
+    text.style.transform=`translateX(${0}%) translateY(${(-y/7)-32}%)`
+    layer[2].style.transform=`translateX(${0}) translateY(${-y/2}%)`
+    layer[3].style.transform=`translateX(${0}) translateY(${-y/1}%)`
+    if(a>800){
+        layer[4].style.transform=`translateX(${0}) translateY(${-y/1}%)`
+    }else{
+        layer[4].style.transform=`translateX(${0}) translateY(${-y/2}%)`
+
+    }
+    
+
 
 }

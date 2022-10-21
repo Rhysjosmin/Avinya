@@ -1,105 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@font-face {
+    font-family: RM;
+    src: url(./Media/Fonts/RamadhanMubarak.ttf);
+}
 *{
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-}
-:root{
-    --accent:rgb(220, 204, 56);
-}
-@font-face {
-    font-family: TheRambler;
-    src: url(./Fonts/Shielfie.otf);
-}
-@font-face {
-    font-family: Tilly;
-    src: url(./Fonts/);
-}
-.circle{
-    aspect-ratio: 1;
-    min-width: 5rem;
-    border-radius: 50%;
-}
+    ::-webkit-scrollbar{
+        background: #101010;
+        width: .5rem;
 
-nav{
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: black;
-    height: 5rem;
-   padding-left: 1rem;
-   padding-right: 1rem;
-    #logo{
-        font-size:1.1rem;
     }
-    a{
-        font-size:1rem;
-        text-decoration: none;
-        color: aliceblue;
-        font-weight: 900;
-        transition: color;
-        transition-duration: 500ms;
-        &:hover{
-            color: var(--accent);
-        }
+    ::-webkit-scrollbar-thumb{
+        background: #202020;
+
     }
-    #links{
-        display: flex;
-        gap: 2rem;
-    }
-   
+}
+body{
+    margin: 0%;
+    height: 100rem;
+
 }
 #bg{
 
-    z-index: -1;
+    h1{
+        transition: transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        font-weight: 100;
+        font-family: 'RM';
+
+color: antiquewhite;
+
+
+left: 1rem;
+
+font-size: 25vw;
+    }
     position: fixed;
-    background: linear-gradient(to top,rgb(25, 1, 149),rgb(34, 137, 177));
     width: 100vw;
-    height: 100vh;
     top: 0;
-    display: flex;
+    height: 100vh;
+background: #101010;
+   img:nth-of-type(1){
+bottom: 15vh;
+filter: blur(20px);
+   }
+   img:nth-of-type(2){
+    filter: blur(10px);
+    bottom: 10vh;
+       }
+       img:nth-of-type(3){
+        filter: blur(10px);
+        bottom: 5vh;
+           }
+    img{
+        filter: blur(1px) drop-shadow(0px -20px 30px rgba(0, 0, 0, 0.1) );
+       
+        transition: transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        position: absolute;
+        bottom: -5vh;
+        width: 100vw;
+    }
+    div{
+        position: fixed;
+        bottom: -200%;
+        width: 100vw;
+        height: 200%;
+        background: #101010;
+        //background: linear-gradient(to top,#F4803E,#d63075);
+        transition: transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+img{
+    filter: none !important;
+    width: auto;
+    height: 30rem;
 }
-#sun{
-    display: none;  //remove this to remove the sun
-    width: 20rem;
-    height: 20rem;
-    background: white;
-    box-shadow: rgb(255, 162, 0) 0vh 0vh 10rem 2rem;
-}
-#top{
-    
-    position: absolute;
-   width: 100%;
-height: 400vh;
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-z-index: 3;
-h2{
-    text-align: center;
-    font-family: Tilly;
-    font-size: 3rem;
-line-height: 2.4  rem;
-    font-weight: 300;
-}
-h1{
-    font-weight: 10;
-    font-family: TheRambler;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    font-size: 14rem;
-}
-
-
-}
-
-.layers{
-
-    bottom:  0;
-    width: 100vw;
-
-position: fixed;
-height: 10rem;
-background: linear-gradient(to top ,red,orange);
-
+    }
+   
 }
