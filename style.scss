@@ -15,8 +15,9 @@
     }
 }
 body{
+    background: #101010;
     margin: 0%;
-    height: 100rem;
+min-height: 400vh;
 
 }
 #bg{
@@ -25,31 +26,31 @@ body{
         transition: transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1);
         font-weight: 100;
         font-family: 'RM';
-
-color: antiquewhite;
-
-
-left: 1rem;
-
-font-size: 25vw;
+        color: antiquewhite;
+        left: 1rem;
+        font-size: 25vw;
     }
+
     position: fixed;
     width: 100vw;
     top: 0;
     height: 100vh;
-background: #101010;
+    background: #101010;
+
    img:nth-of-type(1){
-bottom: 15vh;
-filter: blur(20px);
+        bottom: 15vh;
+        filter: blur(20px);
    }
+
    img:nth-of-type(2){
-    filter: blur(10px);
-    bottom: 10vh;
+        filter: blur(10px);
+        bottom: 10vh;
        }
-       img:nth-of-type(3){
+
+    img:nth-of-type(3){
         filter: blur(10px);
         bottom: 5vh;
-           }
+        }
     img{
         filter: blur(1px) drop-shadow(0px -20px 30px rgba(0, 0, 0, 0.1) );
        
@@ -58,19 +59,20 @@ filter: blur(20px);
         bottom: -5vh;
         width: 100vw;
     }
-    div{
-        position: fixed;
-        bottom: -200%;
-        width: 100vw;
-        height: 200%;
-        background: #101010;
-        //background: linear-gradient(to top,#F4803E,#d63075);
-        transition: transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-img{
-    filter: none !important;
-    width: auto;
-    height: 30rem;
-}
-    }
+
+      transition: opacity 1s; 
    
 }
+
+#pushover{
+    position: fixed;
+    bottom: -200%;
+    width: 100vw;
+    height: 200%;
+    background: #101010;
+    //background: linear-gradient(to top,#F4803E,#d63075);
+    transition: transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+
+
+}
+

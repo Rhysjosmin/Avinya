@@ -1,5 +1,7 @@
 const layer =document.getElementsByClassName('clouds')
 const text =document.getElementById('AVINYA')
+const pushover =document.getElementById('pushover')
+const bg =document.getElementById('bg')
 
 
 
@@ -21,12 +23,20 @@ function parallax(a){
     layer[2].style.transform=`translateX(${0}) translateY(${-y/2}%)`
     layer[3].style.transform=`translateX(${0}) translateY(${-y/1}%)`
     if(a>800){
-        layer[4].style.transform=`translateX(${0}) translateY(${-y/1}%)`
+        layer
+        pushover.style.transform=`translateX(${0}) translateY(${-y/1.5}%)`
     }else{
-        layer[4].style.transform=`translateX(${0}) translateY(${-y/2}%)`
+        pushover.style.transform=`translateX(${0}) translateY(${-y/3}%)`
 
     }
-    
+    if(a>800){
+
+        bg.style.opacity=0;
+    }else{
+       bg.style.opacity=1;
+    }
+
+  
 
 
 }

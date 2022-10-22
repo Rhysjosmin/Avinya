@@ -12,8 +12,9 @@
 }
 
 body {
+  background: #101010;
   margin: 0%;
-  height: 100rem;
+  min-height: 400vh;
 }
 
 #bg {
@@ -22,6 +23,7 @@ body {
   top: 0;
   height: 100vh;
   background: #101010;
+  transition: opacity 1s;
 }
 #bg h1 {
   transition: transform 0.1s cubic-bezier(0.175, 0.885, 0.32, 1.1);
@@ -50,16 +52,12 @@ body {
   bottom: -5vh;
   width: 100vw;
 }
-#bg div {
+
+#pushover {
   position: fixed;
   bottom: -200%;
   width: 100vw;
   height: 200%;
   background: #101010;
   transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.1);
-}
-#bg div img {
-  filter: none !important;
-  width: auto;
-  height: 30rem;
 }
