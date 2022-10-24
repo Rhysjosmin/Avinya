@@ -17,10 +17,13 @@
     }
 }
 body{
-    background: #010101;
+    background: var(--bg);
     margin: 0%;
 
 
+}
+:root{
+    --bg:#000;
 }
 
 #bg{
@@ -40,12 +43,12 @@ body{
     width: 100vw;
     top: 0;
     height: 100vh;
-    background: #010101;
+    background: var(--bg);
 
   
     img{
        
-      //  transition: transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        transition: transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
         position: absolute;
         bottom: -2vh;
         width: 100vw;
@@ -60,9 +63,9 @@ body{
     bottom: -200%;
     width: 100vw;
     height: 200%;
-    background: #010101;
+    background: var(--bg);
     //background: linear-gradient(to top,#F4803E,#d63075);
-    //transition: transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    transition: transform .8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
 
 
 }
@@ -77,27 +80,64 @@ body{
 }
 
 .card{
+    padding: 1rem;
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 1rem;
     font-family: 'Poppins', sans-serif;
 
-    width: 50rem;
-    height: 25rem;
+    width: 55rem;
+    height: 30rem;
 
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
 gap:1rem;
-p{
-    border-radius: inherit;
-   text-transform: capitalize;
+.EventName{
+    font-weight: 900;
+    font-size: 3rem;
+    
+}
+.rside{
+    height: inherit;
+    display: flex;
+
+    
+    flex-direction: column;
+}
+.buttons{
+width: 100%;
+display: flex;
+justify-content:center;
+gap: 2rem;
+
+
+a{
+    width: 50%;
+    background: #ffffff;
+    padding: 1rem;
    text-align: center;
-    align-self: center;
-    height: 25rem;
-    background: #0c0c0c;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #000;
+    transition: .2s;
+    &:hover{
+        background: #000000; 
+        color: #ffffff;
+    }
+}
+}
+p{
+
+   text-transform: capitalize;
+
+
+    height: inherit;
+    
+
 }
     img{
         border-radius: inherit;
         align-self: center;
 
-        height: 25rem;
+        height: inherit;
     }
 }

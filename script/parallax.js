@@ -30,12 +30,12 @@ function parallax(a){
   //  layer[3].style.transform=`translateX(${0}) translateY(${-y/1}%)`
     if(a>600){
     
-        pushover.style.transform=`translateX(${0}) translateY(${-y/2}%)`
+        pushover.style.transform=`translateX(${0}) translateY(${-y/1.2}%)`
     }else{
         pushover.style.transform=`translateX(${0}) translateY(${-(y/(5-(12/separation)))}%)`
 
     }
-    if(a>600){
+    if(a>650){
 
         bg.style.opacity=0;
     }else{

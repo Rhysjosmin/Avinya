@@ -13,8 +13,12 @@
 }
 
 body {
-  background: #010101;
+  background: var(--bg);
   margin: 0%;
+}
+
+:root {
+  --bg:#000;
 }
 
 #bg {
@@ -23,7 +27,7 @@ body {
   width: 100vw;
   top: 0;
   height: 100vh;
-  background: #010101;
+  background: var(--bg);
   transition: opacity 1s;
 }
 #bg h1 {
@@ -35,6 +39,7 @@ body {
   font-size: 25vw;
 }
 #bg img {
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
   position: absolute;
   bottom: -2vh;
   width: 100vw;
@@ -45,7 +50,8 @@ body {
   bottom: -200%;
   width: 100vw;
   height: 200%;
-  background: #010101;
+  background: var(--bg);
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
 }
 
 #main {
@@ -57,24 +63,51 @@ body {
 }
 
 .card {
+  padding: 1rem;
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 1rem;
   font-family: "Poppins", sans-serif;
-  width: 50rem;
-  height: 25rem;
-  color: white;
+  width: 55rem;
+  height: 30rem;
+  color: rgb(255, 255, 255);
   display: flex;
   gap: 1rem;
 }
-.card p {
-  border-radius: inherit;
-  text-transform: capitalize;
+.card .EventName {
+  font-weight: 900;
+  font-size: 3rem;
+}
+.card .rside {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.card .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.card .buttons a {
+  width: 50%;
+  background: #ffffff;
+  padding: 1rem;
   text-align: center;
-  align-self: center;
-  height: 25rem;
-  background: #0c0c0c;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s;
+}
+.card .buttons a:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.card p {
+  text-transform: capitalize;
+  height: inherit;
 }
 .card img {
   border-radius: inherit;
   align-self: center;
-  height: 25rem;
+  height: inherit;
 }
