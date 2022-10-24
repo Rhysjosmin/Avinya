@@ -4,6 +4,12 @@
   font-family: RM;
   src: url(./Media/Fonts/RamadhanMubarak.ttf);
 }
+* ::-moz-selection {
+  background: var(--selection);
+}
+* ::selection {
+  background: var(--selection);
+}
 * ::-webkit-scrollbar {
   background: #101010;
   width: 0.5rem;
@@ -18,7 +24,10 @@ body {
 }
 
 :root {
-  --bg:#000;
+  --selection:rgba(175, 250, 37, 0.765);
+  --accent:rgb(255, 94, 0);
+  --bg:rgb(0, 0, 0);
+  --text:rgb(255, 252, 252);
 }
 
 #bg {
@@ -39,23 +48,48 @@ body {
   font-size: 25vw;
 }
 #bg img {
-  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
   position: absolute;
   bottom: -2vh;
   width: 100vw;
 }
 
 #pushover {
+  display: none;
   position: fixed;
   bottom: -200%;
   width: 100vw;
   height: 200%;
-  background: var(--bg);
-  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+}
+
+nav {
+  color: var(--text);
+  max-height: 4rem;
+  background: rgba(0, 0, 0, 0.0666666667);
+  gap: 2rem;
+  z-index: 2;
+  position: fixed;
+  width: 100vw;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav ul {
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+nav ul a {
+  text-decoration: none;
+  color: var(--text);
 }
 
 #main {
-  margin-top: 150vh;
+  position: relative;
+  top: 8rem;
+  z-index: 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -63,13 +97,16 @@ body {
 }
 
 .card {
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.2);
   padding: 1rem;
-  border: 1px solid rgb(255, 255, 255);
+  border: 1px solid var(--text);
   border-radius: 1rem;
   font-family: "Poppins", sans-serif;
   width: 55rem;
   height: 30rem;
-  color: rgb(255, 255, 255);
+  color: var(--text);
   display: flex;
   gap: 1rem;
 }
@@ -110,4 +147,7 @@ body {
   border-radius: inherit;
   align-self: center;
   height: inherit;
+  width: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }

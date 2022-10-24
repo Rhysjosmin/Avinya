@@ -16,8 +16,8 @@ window.addEventListener("scroll",function(){
 
 function parallax(a){
     console.log(a)
-    y=a/10
-    var separation=4;
+    y=a/500
+    var separation=5;
 
     for(i=0;i<layer.length;i++){
         layer[i].style.transform=`translateX(${0}) translateY(${-(y/(5-(i/separation)))}%)`
@@ -37,12 +37,11 @@ function parallax(a){
     }
     if(a>650){
 
-        bg.style.opacity=0;
+       // bg.style.opacity=0;
     }else{
        bg.style.opacity=1;
     }
 
-  
 
 
 }
