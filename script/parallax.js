@@ -25,7 +25,7 @@ function parallax(a){
     }
   //  layer[0].style.transform=`translateX(${0}) translateY(${-(y/8)}%)`
   //  layer[1].style.transform=`translateX(${0}) translateY(${-y/4}%)`
-    text.style.transform=`translateX(${0}%) translateY(${(-y/7)-32}%)`
+    text.style.transform=`translateX(${0}) translateY(${-(y/(5-(11/separation))+20)}%)`
   //  layer[2].style.transform=`translateX(${0}) translateY(${-y/2}%)`
   //  layer[3].style.transform=`translateX(${0}) translateY(${-y/1}%)`
     if(a>600){
