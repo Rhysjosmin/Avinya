@@ -68,12 +68,14 @@ nav {
   gap: 2rem;
   z-index: 2;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 nav ul {
   padding: 1rem;
@@ -109,6 +111,7 @@ nav ul a {
   color: var(--text);
   display: flex;
   gap: 1rem;
+  position: relative;
 }
 .card .EventName {
   font-weight: 900;
@@ -148,6 +151,35 @@ nav ul a {
   align-self: center;
   height: inherit;
   width: 35%;
+  position: relative;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+/* Responsive */
+@media screen and (max-width:576px ) {
+  .card {
+    width: 85%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:768px) {
+
+}
+
+@media screen and (max-width:992px) {
+  
+
+}
+
+@media screen and (max-width:1200px) {
+  
 }
