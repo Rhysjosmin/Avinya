@@ -63,7 +63,7 @@ body {
 
 nav {
   color: var(--text);
-  max-height: 4rem;
+  max-height: inherit;
   background: rgba(0, 0, 0, 0.0666666667);
   gap: 2rem;
   z-index: 2;
@@ -76,21 +76,67 @@ nav {
   justify-content: space-between;
   padding-left: 10px;
   padding-right: 10px;
+  margin-top: -20px;
 }
+
+
+
+nav img{
+  width: 300px;
+  height: 100px;
+  object-fit: cover;
+  margin-left: -60px;
+}
+
 nav ul {
   padding: 1rem;
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   list-style: none;
+  padding-right: 20px;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
 }
 nav ul a {
   text-decoration: none;
   color: var(--text);
 }
 
+nav ul a:hover{
+  color: rgb(192, 56, 255);
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+
+nav ul a.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul a.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+nav ul a.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 #main {
   position: relative;
-  top: 8rem;
+  /* margin-top: 8em; */
+  margin-bottom: 2em;
   z-index: 0;
   display: flex;
   align-items: center;
@@ -106,6 +152,7 @@ nav ul a {
   border: 1px solid var(--text);
   border-radius: 1rem;
   font-family: "Poppins", sans-serif;
+  text-align: justify;
   width: 55rem;
   height: 30rem;
   color: var(--text);
@@ -156,8 +203,90 @@ nav ul a {
      object-fit: cover;
 }
 
+footer{
+  margin-top: 100px;
+  width: 100%;
+  height: inherit;
+  background: none;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+  position: relative;
+}
+
+.footer .footer-div{
+  background-color: #ff0000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='600' y1='25' x2='600' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0000'/%3E%3Cstop offset='1' stop-color='%23E0F'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='650' y1='25' x2='650' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0019'/%3E%3Cstop offset='1' stop-color='%23ce00f3'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='700' y1='25' x2='700' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0031'/%3E%3Cstop offset='1' stop-color='%23b000e6'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' gradientUnits='userSpaceOnUse' x1='750' y1='25' x2='750' y2='777'%3E%3Cstop offset='0' stop-color='%23ff004a'/%3E%3Cstop offset='1' stop-color='%239400da'/%3E%3C/linearGradient%3E%3ClinearGradient id='e' gradientUnits='userSpaceOnUse' x1='800' y1='25' x2='800' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0063'/%3E%3Cstop offset='1' stop-color='%237a00ce'/%3E%3C/linearGradient%3E%3ClinearGradient id='f' gradientUnits='userSpaceOnUse' x1='850' y1='25' x2='850' y2='777'%3E%3Cstop offset='0' stop-color='%23ff007c'/%3E%3Cstop offset='1' stop-color='%236200c1'/%3E%3C/linearGradient%3E%3ClinearGradient id='g' gradientUnits='userSpaceOnUse' x1='900' y1='25' x2='900' y2='777'%3E%3Cstop offset='0' stop-color='%23ff0094'/%3E%3Cstop offset='1' stop-color='%234d00b5'/%3E%3C/linearGradient%3E%3ClinearGradient id='h' gradientUnits='userSpaceOnUse' x1='950' y1='25' x2='950' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00ad'/%3E%3Cstop offset='1' stop-color='%233900a8'/%3E%3C/linearGradient%3E%3ClinearGradient id='i' gradientUnits='userSpaceOnUse' x1='1000' y1='25' x2='1000' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00c6'/%3E%3Cstop offset='1' stop-color='%2328009c'/%3E%3C/linearGradient%3E%3ClinearGradient id='j' gradientUnits='userSpaceOnUse' x1='1050' y1='25' x2='1050' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00df'/%3E%3Cstop offset='1' stop-color='%23180090'/%3E%3C/linearGradient%3E%3ClinearGradient id='k' gradientUnits='userSpaceOnUse' x1='1100' y1='25' x2='1100' y2='777'%3E%3Cstop offset='0' stop-color='%23ff00f7'/%3E%3Cstop offset='1' stop-color='%230b0083'/%3E%3C/linearGradient%3E%3ClinearGradient id='l' gradientUnits='userSpaceOnUse' x1='1150' y1='25' x2='1150' y2='777'%3E%3Cstop offset='0' stop-color='%23E0F'/%3E%3Cstop offset='1' stop-color='%23007'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg %3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' x='100' width='1100' height='800'/%3E%3Crect fill='url(%23c)' x='200' width='1000' height='800'/%3E%3Crect fill='url(%23d)' x='300' width='900' height='800'/%3E%3Crect fill='url(%23e)' x='400' width='800' height='800'/%3E%3Crect fill='url(%23f)' x='500' width='700' height='800'/%3E%3Crect fill='url(%23g)' x='600' width='600' height='800'/%3E%3Crect fill='url(%23h)' x='700' width='500' height='800'/%3E%3Crect fill='url(%23i)' x='800' width='400' height='800'/%3E%3Crect fill='url(%23j)' x='900' width='300' height='800'/%3E%3Crect fill='url(%23k)' x='1000' width='200' height='800'/%3E%3Crect fill='url(%23l)' x='1100' width='100' height='800'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  border-radius: 1rem;
+  margin: 30px;
+  height: inherit;
+  position: relative;
+  padding: 20px;
+}
+
+.footer .fdiv-legend{
+  font-family:RM;
+  font-size: 10em;
+  font-weight: 500;
+  filter:drop-shadow(16px 16px 10px black);
+  position: absolute;
+  z-index: 2;
+  top: -25%;
+}
+
+.logo-slider{
+  width: 100%;
+}
+
+.slider-area h2 {
+	text-align: center;
+	font-family: impact;
+	font-size: 60px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin: 100px 0 30px 0;
+	color: #fff;
+}
+.wrapper {
+	display: flex;
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: 180px;
+	padding: 2.5rem;
+	background: #ddd;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item {
+	animation: animate 25s alternate linear infinite;
+}
+.container:hover .item {
+	animation-play-state: paused;
+}
+@keyframes animate {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+	100% {
+		transform: translate3d(-1100px, 0, 0);
+	}
+}
+
 /* Responsive */
 @media screen and (max-width:576px ) {
+
+  nav img{
+    width: 150px;
+    margin-top: -10px;
+    margin-left: -20px;
+  }
+
+  nav ul{
+    font-size: 1rem;
+  }
+
   .card {
     width: 85%;
     height: inherit;
@@ -169,6 +298,15 @@ nav ul a {
     height: 200px;
     width: 100%;
   }
+
+  .slider-area h2 {
+		font-size: 30px;
+	}
+	.wrapper {
+		width: 95%;
+		border-radius: 0;
+		padding: 0;
+	}
 }
 
 @media screen and (max-width:768px) {
