@@ -15,3 +15,13 @@ $('.brand-carousel').owlCarousel({
     }
   }) 
   
+
+  function OpenReadMore(a){
+    const ReadMore=document.getElementById(a)
+    ReadMore.style.display='block'
+  }
+
+  function CloseReadMore(a){
+    const ReadMore=document.getElementById(a)
+    ReadMore.style.display='none'
+  }

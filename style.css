@@ -17,7 +17,9 @@
 * ::-webkit-scrollbar-thumb {
   background: #202020;
 }
-
+img{
+  user-select: none;
+}
 body {
   background: var(--bg);
   margin: 0%;
@@ -169,13 +171,24 @@ nav ul a.hover-underline-animation:hover:after {
   display: flex;
   flex-direction: column;
 }
+.more{
+  z-index: 1000;
+  color: white;
+  width: 90%;
+  font-family: "Poppins", sans-serif;
+  backdrop-filter: blur(30PX);
+  background: rgba(255, 255, 255, 0.065);
+  display: none;
+  position: fixed;
+  top: 20%;
+}
 .card .buttons {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 2rem;
 }
-.card .buttons a {
+.card .buttons a,button {
   width: 50%;
   background: #ffffff;
   padding: 1rem;
@@ -184,8 +197,9 @@ nav ul a.hover-underline-animation:hover:after {
   text-decoration: none;
   color: #000;
   transition: 0.2s;
+  border: none;
 }
-.card .buttons a:hover {
+.card .buttons a:hover ,button:hover{
   background: #000000;
   color: #ffffff;
 }
@@ -251,26 +265,32 @@ footer{
 }
 .wrapper {
 	display: flex;
+  gap: 1rem;
 	width: 900px;
 	margin: 0 auto;
 	overflow: hidden;
-	border-radius: 180px;
-	padding: 2.5rem;
+	border-radius: .5rem;
+	padding: .5rem;
 	background: #ddd;
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .item {
+border-radius: inherit;
 	animation: animate 25s alternate linear infinite;
+}
+.item img{
+	border-radius:inherit;
+
 }
 .container:hover .item {
 	animation-play-state: paused;
 }
 @keyframes animate {
 	0% {
-		transform: translate3d(0, 0, 0);
+		transform: translateX(0);
 	}
 	100% {
-		transform: translate3d(-1100px, 0, 0);
+		transform: translateX(-1100px);
 	}
 }
 
