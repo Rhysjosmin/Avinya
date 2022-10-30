@@ -177,10 +177,12 @@ nav ul a.hover-underline-animation:hover:after {
   width: 90%;
   font-family: "Poppins", sans-serif;
   backdrop-filter: blur(30PX);
-  background: rgba(255, 255, 255, 0.065);
+  background: rgb(30, 30, 30);
   display: none;
   position: fixed;
-  top: 20%;
+  top: 2%;
+  height: 90vh;
+  padding: 1rem;
 }
 .card .buttons {
   width: 100%;
@@ -255,10 +257,11 @@ footer{
 
 .slider-area h2 {
 	text-align: center;
-	font-family: impact;
+  font-family: "Poppins", sans-serif;
+
 	font-size: 60px;
 	font-weight: 500;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	letter-spacing: 2px;
 	margin: 100px 0 30px 0;
 	color: #fff;
@@ -266,12 +269,12 @@ footer{
 .wrapper {
 	display: flex;
   gap: 1rem;
-	width: 900px;
+	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
 	border-radius: .5rem;
 	padding: .5rem;
-	background: #ddd;
+	background: rgba(221, 221, 221, 0);
 	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .item {
@@ -279,6 +282,9 @@ border-radius: inherit;
 	animation: animate 25s alternate linear infinite;
 }
 .item img{
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
 	border-radius:inherit;
 
 }
@@ -287,10 +293,10 @@ border-radius: inherit;
 }
 @keyframes animate {
 	0% {
-		transform: translateX(0);
+		transform: translateX(550px);
 	}
 	100% {
-		transform: translateX(-1100px);
+		transform: translateX(-550px);
 	}
 }
 
