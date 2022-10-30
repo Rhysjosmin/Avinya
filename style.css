@@ -68,7 +68,7 @@ nav {
   max-height: inherit;
   background: rgba(0, 0, 0, 0.0666666667);
   gap: 2rem;
-  z-index: 2;
+  z-index: 999;
   position: fixed;
   width: 100%;
   -webkit-backdrop-filter: blur(1px);
@@ -146,6 +146,79 @@ nav ul a.hover-underline-animation:hover:after {
   gap: 3rem;
 }
 
+.logo-slider{
+  width: 100%;
+}
+
+.slider-area h2 {
+	text-align: center;
+  font-family: "Poppins", sans-serif;
+
+	font-size: 60px;
+	font-weight: 500;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	margin: 100px 0 30px 0;
+	color: #fff;
+}
+
+.slider-area hr{
+  width: 50%;
+}
+
+.wrapper {
+	display: flex;
+  gap: 1rem;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	border-radius: .5rem;
+	padding: .5rem;
+	background: rgba(221, 221, 221, 0);
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.item {
+border-radius: inherit;
+	animation: animate 25s alternate linear infinite;
+}
+.item img{
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+	border-radius:inherit;
+
+}
+.container:hover .item {
+	animation-play-state: paused;
+}
+@keyframes animate {
+	0% {
+		transform: translateX(550px);
+	}
+	100% {
+		transform: translateX(-550px);
+	}
+}
+
+.cardh2 {
+	text-align: center;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+	font-size: 60px;
+	font-weight: 500;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+	color: #fff;
+  margin-bottom: -30px;
+}
+
+.cardhr{
+  width: 100%;
+  color: #fff;
+  margin-bottom: -25px;
+  width: 50%;
+}
+
 .card {
   -webkit-backdrop-filter: blur(1px);
           backdrop-filter: blur(1px);
@@ -172,7 +245,7 @@ nav ul a.hover-underline-animation:hover:after {
   flex-direction: column;
 }
 .more{
-  z-index: 1000;
+  z-index: 3;
   color: white;
   width: 90%;
   font-family: "Poppins", sans-serif;
@@ -181,8 +254,25 @@ nav ul a.hover-underline-animation:hover:after {
   display: none;
   position: fixed;
   top: 2%;
-  height: 90vh;
+  height: 80vh;
   padding: 1rem;
+  padding-top: 5rem;
+  border-radius: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: auto;
+  filter:drop-shadow(16px 16px 10px black);
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.more::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.more {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
 }
 .card .buttons {
   width: 100%;
@@ -225,7 +315,7 @@ footer{
   height: inherit;
   background: none;
   color: rgb(255, 255, 255);
-  z-index: 1;
+  /* z-index: 1; */
   position: relative;
 }
 
@@ -251,55 +341,6 @@ footer{
   top: -25%;
 }
 
-.logo-slider{
-  width: 100%;
-}
-
-.slider-area h2 {
-	text-align: center;
-  font-family: "Poppins", sans-serif;
-
-	font-size: 60px;
-	font-weight: 500;
-	text-transform: capitalize;
-	letter-spacing: 2px;
-	margin: 100px 0 30px 0;
-	color: #fff;
-}
-.wrapper {
-	display: flex;
-  gap: 1rem;
-	width: 100%;
-	margin: 0 auto;
-	overflow: hidden;
-	border-radius: .5rem;
-	padding: .5rem;
-	background: rgba(221, 221, 221, 0);
-	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-.item {
-border-radius: inherit;
-	animation: animate 25s alternate linear infinite;
-}
-.item img{
-  width: 400px;
-  height: 200px;
-  object-fit: cover;
-	border-radius:inherit;
-
-}
-.container:hover .item {
-	animation-play-state: paused;
-}
-@keyframes animate {
-	0% {
-		transform: translateX(550px);
-	}
-	100% {
-		transform: translateX(-550px);
-	}
-}
-
 /* Responsive */
 @media screen and (max-width:576px ) {
 
@@ -313,6 +354,10 @@ border-radius: inherit;
     font-size: 1rem;
   }
 
+  .cardh2,.cardhr{
+    font-size: 30px;
+  }
+
   .card {
     width: 85%;
     height: inherit;
@@ -323,6 +368,10 @@ border-radius: inherit;
   .card img {
     height: 200px;
     width: 100%;
+  }
+
+  .more{
+    padding-top: 4rem;
   }
 
   .slider-area h2 {
