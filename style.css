@@ -396,7 +396,7 @@ body{
     bottom: 0;
     list-style: none;
     width: 100vw;
-
+user-select: none;
     height: 4rem;
     justify-content: space-around;
     align-items: center;
@@ -411,6 +411,7 @@ transition: .2s;
     color: var(--accent);
   }
   navMobile span{
+    
     font-size: 10rem;
   }
 ::-webkit-scrollbar{
