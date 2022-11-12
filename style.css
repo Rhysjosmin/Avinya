@@ -28,7 +28,7 @@ body {
 :root {
   --selection:rgba(175, 250, 37, 0.765);
   --accent:rgb(255, 94, 0);
-  --bg:rgb(0, 0, 0);
+  --bg:linear-gradient(to top,rgb(1, 0, 12),rgb(0, 2, 30));
   --text:rgb(255, 252, 252);
 }
 
