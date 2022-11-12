@@ -393,7 +393,7 @@ navMobile{
     z-index: 1000;
     bottom: 0;
     list-style: none;
-    width: 100%;
+    width: 100vw;
 
     height: 4rem;
     justify-content: space-around;
@@ -412,7 +412,7 @@ transition: .2s;
     font-size: 10rem;
   }
 ::-webkit-scrollbar{
-
+display: none;
 }
 #main{
 margin-bottom: 5rem;
@@ -420,9 +420,10 @@ margin-bottom: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
-body{
+
+*{
   overflow-x: hidden;
 }
   
