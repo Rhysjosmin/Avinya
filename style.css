@@ -423,9 +423,7 @@ margin-bottom: 5rem;
   overflow-x: hidden;
 }
 
-*{
-  overflow-x: hidden;
-}
+
   
 nav{
   backdrop-filter: blur(0);
