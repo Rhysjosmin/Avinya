@@ -81,7 +81,14 @@ nav {
   margin-top: -20px;
 }
 
-
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 10000,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 1.8em;
+}
 
 nav img{
   width: 300px;
@@ -374,28 +381,65 @@ footer{
 }
 
 /* Responsive */
-@media screen and (max-width:576px ) {
-  ::-webkit-scrollbar {
+navMobile{
   display: none;
+}
+@media screen and (max-width:576px ) {
+
+  navMobile{
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    bottom: 0;
+    list-style: none;
+    width: 100%;
+
+    height: 4rem;
+    justify-content: space-around;
+    align-items: center;
+background: #000;
   }
-.main{
+  navMobile a{
+text-decoration: none;
+color: white;
+transition: .2s;
+  }
+  navMobile a:hover{
+    color: var(--accent);
+  }
+  navMobile span{
+    font-size: 10rem;
+  }
+::-webkit-scrollbar{
+  display: none;
+}
+#main{
+margin-bottom: 5rem;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
+body{
+  overflow-x: hidden;
+}
   
 nav{
-  position: relative;
+  position: absolute;
+display: flex;
+
 }
+
   nav img{
     width: 150px;
     margin-top: -10px;
-    margin-left: -20px;
+    margin-left: -15px;
   }
 
   nav ul{
+display: none !important;
+    justify-content: space-around;
     font-size: 1rem;
   }
 
@@ -407,17 +451,25 @@ nav{
     font-size: 30px;
   }
   .buttons{
+
     width: 95% !important;
   }
+  .buttons a{
+
+    border-radius: 0px !important;
+  }
   .rside{
+
     display: flex;
     align-items: center;
   }
 
   .card {
+
 backdrop-filter: blur(0px);
     border: none;
     width: 100%;
+   
     height: inherit;
     display: flex;
     flex-direction: column;
@@ -486,6 +538,7 @@ backdrop-filter: blur(0px);
 		font-size: 30px;
 	}
 	.wrapper {
+
 		width: 95%;
 		border-radius: 0;
 		padding: 0;

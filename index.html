@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="s.css">
@@ -51,6 +52,14 @@
       <li><a href="" class="hover-underline-animation">Team</a></li>
     </ul>
   </nav>
+  <navMobile>
+    <li><a href="" class="hover-underline-animation"><span class="material-symbols-outlined">
+      home
+      </span></a></li>
+    <li><a href="" class="hover-underline-animation"><span class="material-symbols-outlined">
+      groups
+      </span></a></li>
+  </navMobile>
   <section id="main">
     <!-- header start -->
     <!-- <div class="header">
@@ -94,7 +103,7 @@
     <hr class="cardhr">
 
 
-    <div class="card " data-aos="fade-left">
+  <div class="card" data-aos="fade-left">
       <img src="./Media/LogosImg/Idea.webp" alt="">
 
       </img>
@@ -535,7 +544,7 @@
   <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({disable: 'mobile'});
   </script>
   <script src="./script/parallax.js"></script>
   <script src="./script/script.js"></script>
