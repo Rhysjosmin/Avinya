@@ -385,7 +385,9 @@ navMobile{
   display: none;
 }
 @media screen and (max-width:576px ) {
-
+body{
+  overflow-x: hidden;
+}
   navMobile{
     overflow: hidden;
     display: flex;
@@ -414,7 +416,9 @@ transition: .2s;
 ::-webkit-scrollbar{
 display: none;
 }
+
 #main{
+  margin-top: 0%;
 margin-bottom: 5rem;
   width: 100%;
   display: flex;
@@ -428,7 +432,7 @@ margin-bottom: 5rem;
 nav{
   backdrop-filter: blur(0);
   position: absolute;
-display: flex;
+display: none;
 
 }
 
@@ -466,7 +470,7 @@ display: none !important;
   }
 
   .card {
-
+margin: 0%;
 backdrop-filter: blur(0px);
     border: none;
     width: 100%;
@@ -477,7 +481,7 @@ backdrop-filter: blur(0px);
   }
 .card p{
   margin-top: -10px;
-  padding: 2.5%;
+  padding: 0%;
   font-size: .8rem;
 }
   .card img {
