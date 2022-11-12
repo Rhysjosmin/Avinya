@@ -480,6 +480,7 @@ backdrop-filter: blur(0px);
     flex-direction: column;
   }
 .card p{
+  width: 95% !important;
   margin-top: -10px;
   padding: 0%;
   font-size: .8rem;
