@@ -387,6 +387,7 @@ navMobile{
 @media screen and (max-width:576px ) {
 
   navMobile{
+    overflow: hidden;
     display: flex;
     position: fixed;
     z-index: 1000;
@@ -411,7 +412,7 @@ transition: .2s;
     font-size: 10rem;
   }
 ::-webkit-scrollbar{
-  display: none;
+
 }
 #main{
 margin-bottom: 5rem;
@@ -426,6 +427,7 @@ body{
 }
   
 nav{
+  backdrop-filter: blur(0);
   position: absolute;
 display: flex;
 
