@@ -137,7 +137,7 @@ nav ul a.hover-underline-animation:hover:after {
 
 #main {
   position: relative;
-  /* margin-top: 8em; */
+   margin-top: 3em; 
   margin-bottom: 2em;
   z-index: 0;
   display: flex;
@@ -375,7 +375,19 @@ footer{
 
 /* Responsive */
 @media screen and (max-width:576px ) {
-
+  ::-webkit-scrollbar {
+  display: none;
+  }
+.main{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+nav{
+  position: relative;
+}
   nav img{
     width: 150px;
     margin-top: -10px;
@@ -393,23 +405,39 @@ footer{
   .cardh2,.cardhr{
     font-size: 30px;
   }
+  .buttons{
+    width: 95% !important;
+  }
+  .rside{
+    display: flex;
+    align-items: center;
+  }
 
   .card {
-    width: 85%;
+backdrop-filter: blur(0px);
+    border: none;
+    width: 100%;
     height: inherit;
     display: flex;
     flex-direction: column;
   }
-
+.card p{
+  margin-top: -10px;
+  padding: 2.5%;
+  font-size: .8rem;
+}
   .card img {
-    height: 200px;
+    border-radius: 0px;
+
+    aspect-ratio: 1/1;
     width: 100%;
   }
 
   .card .EventName {
-    display: block;
-    text-align: center;
-    text-decoration: underline;
+    font-size: 1rem;
+   
+
+
   }
 
   .card .EventName::after{

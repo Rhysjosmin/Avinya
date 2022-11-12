@@ -21,6 +21,8 @@ $('.brand-carousel').owlCarousel({
     ReadMore.style.display='block';
     document.querySelector("body").style.overflow='hidden';
     document.getElementById("main").style.filter='blur(4px)';
+
+    
   }
 
   function CloseReadMore(a){
