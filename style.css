@@ -28,7 +28,7 @@ body {
 :root {
   --selection:rgba(175, 250, 37, 0.765);
   --accent:rgb(255, 94, 0);
-  --bg:linear-gradient(to top,rgb(1, 0, 12),rgb(0, 2, 30));
+  --bg:linear-gradient(to top,hsl(220, 100%, 2%),hsl(252, 100%, 2%));
   --text:rgb(255, 252, 252);
 }
 
@@ -400,7 +400,8 @@ user-select: none;
     height: 4rem;
     justify-content: space-around;
     align-items: center;
-background: #000;
+background: #000000;
+
   }
   navMobile a{
 text-decoration: none;
