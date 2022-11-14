@@ -401,15 +401,26 @@ user-select: none;
     justify-content: space-around;
     align-items: center;
 background: #000000;
+box-shadow: 0rem 9rem 5rem 10rem rgb(0, 0, 0);
 
   }
   navMobile a{
 text-decoration: none;
-color: white;
+color: rgb(255, 255, 255);
 transition: .2s;
+position: relative;
+
+
+display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
   }
   navMobile a:hover{
     color: var(--accent);
+
+    
+
   }
   navMobile span{
     
@@ -495,7 +506,9 @@ backdrop-filter: blur(0px);
   }
 
   .card .EventName {
-    font-size: 1rem;
+    font-size: 2rem;
+
+
    
 
 
