@@ -310,7 +310,8 @@ border-radius: inherit;
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem;
+
 }
 
 .more .buttons.space{
@@ -321,7 +322,7 @@ border-radius: inherit;
   background: #ffffff;
   padding: 1rem;
   text-align: center;
-  border-radius: 1rem;
+  border-radius: 5px !important;
   text-decoration: none;
   color: #000;
   transition: 0.2s;
@@ -337,7 +338,7 @@ border-radius: inherit;
   height: inherit;
 }
 .card img {
-  border-radius: inherit;
+  border-radius: 4px !important;
   align-self: center;
   height: inherit;
   width: 35%;
@@ -497,10 +498,11 @@ backdrop-filter: blur(0px);
   font-size: .8rem;
 }
   .card img {
+    user-select: none;
     border-radius: 0px;
 
     aspect-ratio: 1/1;
-    width: 100%;
+    width: 93%;
   }
 
   .card .EventName {
@@ -533,6 +535,9 @@ backdrop-filter: blur(0px);
   }
 
   .more .info_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-left: 0% !important;
     padding-right: 0% !important;
   }
