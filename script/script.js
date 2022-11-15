@@ -23,7 +23,7 @@ $('.brand-carousel').owlCarousel({
     document.querySelector("body").style.overflow='hidden';
 
     document.getElementById("main").style.transition='filter .6s'
-    document.getElementById("main").style.filter='blur(4px)';
+    document.getElementById("main").style.filter='blur(2px)';
 
     
   }

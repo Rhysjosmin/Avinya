@@ -40,7 +40,7 @@ body {
 }
 #bg h1 {
   font-weight: 100;
-  font-family: "RM";
+  font-family: "Poppins", sans-serif;
   color: antiquewhite;
   position: absolute;
   left: 1rem;
@@ -170,7 +170,7 @@ nav ul a.hover-underline-animation:hover:after {
 }
 
 .header .headright span{
-  font-family: algerian;
+  font-family: "Poppins", sans-serif;
   font-size: 100px;
 }
 
@@ -281,14 +281,14 @@ border-radius: inherit;
   color: white;
   width: 90%;
   font-family: "Poppins", sans-serif;
-  backdrop-filter: blur(30PX);
+
   background: rgb(30, 30, 30);
   display: none;
   position: fixed;
   top: 2%;
   height: 80vh;
   padding: 1rem;
-  padding-top: 5rem;
+
   border-radius: 1rem;
   left: 50%;
   transform: translateX(-50%);
@@ -504,7 +504,7 @@ backdrop-filter: blur(0px);
   }
 
   .card .EventName {
-    font-size: 2rem;
+    font-size: 1.4rem;
 
 
    
@@ -518,9 +518,14 @@ backdrop-filter: blur(0px);
   }
 
   .more{
-    padding-top: 4rem;
-    background: rgb(5, 5, 5);
-    border-radius: 10px;
+    display: flex !important;
+    flex-direction: column;
+    
+
+    padding-top: 0rem;
+    height: 100vh;
+    background: linear-gradient(to top ,black,rgb(115, 72, 255));
+    border-radius: 20px;
     box-shadow: 0 1rem 1rem 2rem rgba(0, 0, 0, 0.442);
     top: 60rem;
     transition: top .6s;
@@ -591,18 +596,19 @@ backdrop-filter: blur(0px);
 
 .more .info_header{
 
-  font-family:poppins;
-  font-size: 2.2em;
-  font-weight: 500;
-  filter:drop-shadow(16px 16px 10px black);
-  display: block;
+
+  font-size: 2.8em;
+
+
+
   text-align: left;
-  align-items: center;
+
 }
 
 
 
 .more .tagline{
+
   font-style: italic;
   display: block;
   text-align: center;
@@ -659,7 +665,7 @@ backdrop-filter: blur(0px);
   font-size: 1.5em;
   color: #ffffff;
   cursor: pointer;
-  font-family: cursive;
+  font-family: "Poppins", sans-serif;
   padding-top: 60px;
 }
 
