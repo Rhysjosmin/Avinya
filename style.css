@@ -503,6 +503,7 @@ backdrop-filter: blur(0px);
 
     aspect-ratio: 1/1;
     width: 93%;
+
   }
 
   .card .EventName {
@@ -530,7 +531,7 @@ backdrop-filter: blur(0px);
     border-radius: 20px;
     box-shadow: 0 1rem 1rem 2rem rgba(0, 0, 0, 0.442);
     top: 60rem;
-    transition: top .6s;
+    transition: top .6s cubic-bezier(0.68, -0.1, 0.2, 1.1);
     
   }
 
