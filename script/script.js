@@ -19,7 +19,10 @@ $('.brand-carousel').owlCarousel({
   function OpenReadMore(a){
     const ReadMore=document.getElementById(a)
     ReadMore.style.display='block';
+    ReadMore.style.top='2rem'
     document.querySelector("body").style.overflow='hidden';
+
+    document.getElementById("main").style.transition='filter .6s'
     document.getElementById("main").style.filter='blur(4px)';
 
     
@@ -27,7 +30,8 @@ $('.brand-carousel').owlCarousel({
 
   function CloseReadMore(a){
     const ReadMore=document.getElementById(a)
-    ReadMore.style.display='none';
+    ReadMore.style.top='60rem' 
+    //ReadMore.style.display='none';
     document.querySelector("body").style.overflow='auto';
     document.getElementById("main").style.filter='none';
   }
