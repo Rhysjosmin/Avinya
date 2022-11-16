@@ -277,7 +277,7 @@ border-radius: inherit;
   flex-direction: column;
 }
 .more{
-  z-index: 3;
+  z-index: 10000000;
   color: white;
   width: 90%;
   font-family: "Poppins", sans-serif;
@@ -285,8 +285,8 @@ border-radius: inherit;
   background: rgb(30, 30, 30);
   display: none;
   position: fixed;
-  top: 2%;
-  height: 80vh;
+
+  height: 85vh;
   padding: 1rem;
 
   border-radius: 1rem;
@@ -398,7 +398,7 @@ footer{
   display: block;
   text-align: center;
   align-items: center;
-  margin-bottom: 30px;
+
 }
 
 .more .info_container{
@@ -540,220 +540,3 @@ footer{
 navMobile{
   display: none;
 }
-@media screen and (max-width:576px ) {
-body{
-  overflow-x: hidden;
-}
-  navMobile{
-    overflow: hidden;
-    display: flex;
-    position: fixed;
-    z-index: 1000;
-    bottom: 0;
-    list-style: none;
-    width: 100vw;
-user-select: none;
-    height: 4rem;
-    justify-content: space-around;
-    align-items: center;
-background: #000000;
-box-shadow: 0rem 9rem 5rem 10rem rgb(0, 0, 0);
-
-  }
-  navMobile a{
-text-decoration: none;
-color: rgb(255, 255, 255);
-transition: .2s;
-position: relative;
-
-
-display: flex;
-text-align: center;
-justify-content: center;
-align-items: center;
-  }
-  navMobile a:hover{
-    color: var(--accent);
-
-    
-
-  }
-  navMobile span{
-    
-    font-size: 10rem;
-  }
-::-webkit-scrollbar{
-display: none;
-}
-
-#main{
-  margin-top: 0%;
-margin-bottom: 5rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-x: hidden;
-}
-
-
-  
-nav{
-  backdrop-filter: blur(0);
-  position: absolute;
-display: none;
-
-}
-
-  nav img{
-    width: 150px;
-    margin-top: -10px;
-    margin-left: -15px;
-  }
-
-  nav ul{
-display: none !important;
-    justify-content: space-around;
-    font-size: 1rem;
-  }
-
-  .header{
-    flex-direction: column;
-  }
-
-  .cardh2,.cardhr{
-    font-size: 30px;
-  }
-  .buttons{
-
-    width: 95% !important;
-  }
-  .buttons a{
-
-    border-radius: 0px !important;
-  }
-  .rside{
-
-    display: flex;
-    align-items: center;
-  }
-
-  .card {
-margin: 0%;
-backdrop-filter: blur(0px);
-    border: none;
-    width: 100%;
-   
-    height: inherit;
-    display: flex;
-    flex-direction: column;
-  }
-.card p{
-  width: 95% !important;
-  margin-top: -10px;
-  padding: 0%;
-  font-size: .8rem;
-}
-  .card img {
-    user-select: none;
-    border-radius: 0px;
-
-    aspect-ratio: 1/1;
-    width: 93%;
-
-  }
-
-  .card .EventName {
-    font-size: 1.4rem;
-
-
-   
-
-
-  }
-
-  .card .EventName::after{
-    content: "\a";
-    white-space: pre;
-  }
-
-  .more{
-    display: flex !important;
-    flex-direction: column;
-    
-
-    padding-top: 0rem;
-    height: 100vh;
-    background: linear-gradient(to top ,black,rgb(115, 72, 255));
-    border-radius: 20px;
-    box-shadow: 0 1rem 1rem 2rem rgba(0, 0, 0, 0.442);
-    top: 60rem;
-    transition: top .6s cubic-bezier(0.68, -0.1, 0.2, 1.1);
-    
-  }
-
-  .more .info_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0% !important;
-    padding-right: 0% !important;
-  }
-
-  .more .blocks::before{
-    width: 102% !important;
-    left: -1% !important;
-  }
-
-  .more .info_container .blocks_2{
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center;
-  }
-
-  .more .info_container .blocks_1{
-    justify-content: center !important;
-  }
-
-  .more .blocks.card_width{
-    width: var(--card-width) !important;
-  }
-
-  .more .blocks.card_height{
-    height: inherit !important;
-  }
-
-  .more .info_container .blocks_2 .space_down{
-    margin-bottom: 50px;
-  }
-
-  .slider-area h2 {
-		font-size: 30px;
-	}
-	.wrapper {
-
-		width: 95%;
-		border-radius: 0;
-		padding: 0;
-	}
-
-  .footer .footer-div{
-    margin: 20px;
-  }
-}
-
-@media screen and (max-width:768px) {
-  .more .info_container .blocks_2{
-    flex-direction: column;
-  }
-}
-
-@media screen and (max-width:992px) {
-  
-
-}
-
-@media screen and (max-width:1200px) {
-  
-}
-
