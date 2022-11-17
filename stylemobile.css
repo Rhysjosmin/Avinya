@@ -197,6 +197,16 @@
     
       .footer .footer-div{
         margin: 20px;
+        flex-direction: row;
+      }
+
+      .foot-L {
+        width: 100%;
+      }
+      
+      .foot-r {
+        width: 100%;
+        margin-top: 20px;
       }
     }
     
