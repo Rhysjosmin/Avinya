@@ -91,10 +91,11 @@ nav {
 }
 
 nav img{
-  width: 300px;
+  width: 200px;
   height: 100px;
-  object-fit: cover;
-  margin-left: -60px;
+  object-fit:scale-down;
+  /* margin-left: -60px; */
+  margin-top: 10px;
 }
 
 nav ul {
@@ -457,7 +458,7 @@ footer{
   filter:drop-shadow(16px 16px 10px black);
   position: absolute;
   z-index: 2;
-  top: -14%;
+  top: -25%;
 }
 
 /*End Of Footer*/

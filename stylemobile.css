@@ -208,6 +208,10 @@
         width: 100%;
         margin-top: 20px;
       }
+
+      .footer .fdiv-legend{
+        top: -13%;
+      }
     }
     
     @media screen and (max-width:768px) {
