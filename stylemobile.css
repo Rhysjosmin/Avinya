@@ -196,7 +196,10 @@
         }
     
       .footer .footer-div{
-        margin: 20px;
+        margin-bottom: 80px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
         flex-direction: row;
       }
 
@@ -210,7 +213,7 @@
       }
 
       .footer .fdiv-legend{
-        top: -13%;
+        top: -15%;
       }
     }
     
