@@ -307,10 +307,11 @@ border-radius: 0px !important;
 
 
 .dp{
-border-radius: 2rem;
+border-radius: .2rem;
     object-fit: cover;
-    width: 90vw;
-    height: 90vw;
+    width: 94vw;
+    height: 94vw;
+
 
 
 }
