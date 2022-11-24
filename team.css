@@ -13,6 +13,7 @@
 }
 /*team container*/
 .team{
+    scroll-snap-type: y mandatory;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -204,8 +205,8 @@ nav{
     background-color: transparent;
 }
 @media (max-width: 500px) {
- 
-    .section-header{
+
+.section-header{
 font-size: 2rem !important;
 white-space: wrap;
 font-weight: 1000 !important;
@@ -213,26 +214,35 @@ font-weight: 1000 !important;
   nav{
     display: none;
   }
-
+body{
+    scroll-snap-type: x mandatory;
+}
 .name{
-   text-shadow: 2px 2px rgb(252, 108, 6), 5px 5px rgb(0, 0, 0);
+    font-weight: 900;
+   text-shadow:  3px 3px rgb(0, 0, 0);
 position: absolute;
-bottom:3.5rem;
+bottom:3rem;
 white-space: wrap;
-font-size: 1.8rem !important;
+font-size: 6vw !important;
 width: inherit;
 display: flex;
-justify-content: center;
+text-indent: 1rem;
+
+
 }
 .role{
-    text-shadow: 2px 2px rgb(59, 6, 252);
-    bottom: 1.3em;
+
+    font-size: 5vw;
+    text-indent: 1rem;
+    text-shadow: 2px 2px rgb(55, 48, 78);
+    bottom: 1rem;
     position: absolute;
 
     width: inherit;
     display: flex;
-    justify-content: center;
+
 }
+
   navMobile{
     overflow: hidden;
     display: flex;
@@ -273,7 +283,7 @@ align-items: center;
   }
 
     .member{
-
+scroll-snap-align: center;
 
     width:100vw;
     height: auto;
@@ -313,19 +323,10 @@ border-radius: .2rem;
     height: 94vw;
 
 
-
 }
-.name{
-    font-weight: 900;
-   
-    font-size: 1.6rem;
 
-}
-.role{
 
-    font-weight: 300;
-    font-size: 1.4rem;
-}
+
 
 
 .SocialButton{
