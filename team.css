@@ -171,7 +171,7 @@ cursor: pointer;
 
 #SwitchTab div{
     font-size: 1rem;
-    background: rgb(255, 255, 255);
+    background: rgb(204, 204, 204);
     width: 8rem;
     font-weight: 900;
     text-align: center;
@@ -196,8 +196,8 @@ border-radius:  2rem 0rem 0rem 2rem;
     display: flex;
 }
 .tabselected{
-color: #ffffff !important;
-    background: rgb(0, 0, 0)!important;
+color: #000000 !important;
+    background: rgb(82, 163, 255)!important;
 }
 nav{
     top: 0 !important;
