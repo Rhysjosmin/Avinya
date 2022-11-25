@@ -16,6 +16,13 @@
 </head>
 
 <body>
+
+  <section class="preload">
+    <div class="lds-ripple"><div></div><div></div><div></div></div>
+    <h2 id="loadingDisp">Avinya</h2>
+    
+    
+</section> 
   <div id='stars'></div>
 
 
@@ -476,7 +483,16 @@ $('#vid').bind('isVisible', isVisible);
 $('#vid').show('slow', function(){
     $(this).trigger('isVisible');
 });
+
+
+
+
+
+
+
+
   </script>
+  <script src="./script/preload.js"></script>
   <script src="./script/parallax.js"></script>
   <script src="./script/script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

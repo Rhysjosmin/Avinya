@@ -35,3 +35,4 @@ $('.brand-carousel').owlCarousel({
     document.querySelector("body").style.overflow='auto';
     document.getElementById("main").style.filter='none';
   }
+

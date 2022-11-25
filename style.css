@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@font-face {
-  font-family: RamadhanMubarak;
-  src: url(./Media/Fonts/RamadhanMubarak.ttf);
-}
+
 * ::-moz-selection {
   background: var(--selection);
 }
@@ -643,3 +640,79 @@ footer{
 navMobile{
   display: none;
 }
+
+
+
+
+.preload {
+  height: 100vh;
+  width: 100vw;
+  font-size: 2vw;
+  font-weight: 10;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  background: black;
+  color: white;
+  transition: opacity 0.4s ease 1s;
+  overflow: hidden;
+}
+
+#loadingDisp {
+  z-index: inherit;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 4rem;
+  font-weight: 1000;
+}
+
+.preload-finish {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-ripple div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-ripple 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+
+.lds-ripple div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-ripple div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-ripple div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+

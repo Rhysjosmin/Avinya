@@ -21,7 +21,12 @@
     </head>
     <body>
         <!-- <div id='stars'></div> -->
-
+        <section class="preload">
+            <div class="lds-ripple"><div></div><div></div><div></div></div>
+            <h2 id="loadingDisp">Avinya Team</h2>
+            
+            
+        </section> 
 <nav>
     <div>
       <img src="./Media/LogosImg/avinya_update.png" alt="logo">
@@ -176,25 +181,25 @@
             <div class="team Student">
 
                    
+                <div class="member Student" >
+                    <div class="memberCard">
+                        <img class="dp" src="./Media/Pfp/Rhys.jpg" alt="">
+                        <h1 class="name">Rhys Josmin </h1>
+                        <h1 class="role">Team Leader</h1>
+                        
+                        <!-- <a href="http://rhysjosmin.tk" class="SocialButton whatsApp">WhatsApp</a>🥲-->
+                    </div>
+                </div>
        
                     <div class="member Student" >
                         <div class="memberCard">
                             <img class="dp" src="https://cdn.discordapp.com/attachments/1026865791557181550/1026865868359094313/Navin_Morajkar.png" alt="">
                             <h1 class="name">Navin Morajkar</h1>
-                            <h1 class="role">Team Leader</h1>                       
+                            <h1 class="role">Team Member</h1>                       
                         </div>
                     </div>
                     
 
-                    <div class="member Student" >
-                        <div class="memberCard">
-                            <img class="dp" src="./Media/Pfp/Rhys.jpg" alt="">
-                            <h1 class="name">Rhys Josmin </h1>
-                            <h1 class="role">Team Member</h1>
-                            
-                            <!-- <a href="http://rhysjosmin.tk" class="SocialButton whatsApp">WhatsApp</a>🥲-->
-                        </div>
-                    </div>
 
                     
                     <div class="member Student" >
@@ -537,8 +542,13 @@
     var Faculty= document.getElementsByClassName('Faculty');
     const s=document.getElementById('std')
     const f=document.getElementById('fac')
-    console.log(student)
-    console.log(Faculty)
+
+   
+
+
+
+
+
 
     function muasu(m)
     
@@ -578,6 +588,7 @@ window.onload = function() {
 
 
 </script>
+<script src="./script/preload.js"></script>
         <script src="../Scripts/navbar.js" ></script>
 
         <script src="../Scripts/Nav.js"></script> 
