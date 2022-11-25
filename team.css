@@ -206,153 +206,149 @@ nav{
 }
 @media (max-width: 500px) {
 
-.section-header{
-font-size: 2rem !important;
-white-space: wrap;
-font-weight: 1000 !important;
+    .section-header{
+    font-size: 2rem !important;
+    white-space: wrap;
+    font-weight: 1000 !important;
+        }
+    nav{
+        display: none;
     }
-  nav{
-    display: none;
-  }
-body{
-    scroll-snap-type: x mandatory;
-}
-.name{
-    font-weight: 900;
-   text-shadow:  3px 3px rgb(0, 0, 0);
-position: absolute;
-bottom:3rem;
-white-space: wrap;
-font-size: 6vw !important;
-width: inherit;
-display: flex;
-text-indent: 1rem;
+    body{
+        scroll-snap-type: x mandatory;
+    }
+    .name{
+        font-weight: 900;
+        text-shadow:  .2rem .2rem rgb(0, 0, 0);
+        position: absolute;
+        bottom:3rem;
+        white-space: wrap;
+        font-size: 2rem !important;
+        width: inherit;
+        display: flex;
+        text-indent: 1rem;
 
 
-}
-.role{
+    }
+    .role{
 
-    font-size: 5vw;
-    text-indent: 1rem;
-    text-shadow: 2px 2px rgb(55, 48, 78);
-    bottom: 1rem;
-    position: absolute;
+        font-size: 1.3rem;
+        text-indent: 1rem;
+        text-shadow: .1rem .1rem rgb(0, 0, 0);
+        bottom: 1rem;
+        position: absolute;
 
-    width: inherit;
+        width: inherit;
+        display: flex;
+
+    }
+
+    navMobile{
+        overflow: hidden;
+        display: flex;
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+        list-style: none;
+        width: 100vw;
+    user-select: none;
+        height: 4rem;
+        justify-content: space-around;
+        align-items: center;
+    background: #000000;
+    box-shadow: 0rem 9rem 5rem 10rem rgb(0, 0, 0);
+
+    }
+    navMobile a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition: .2s;
+    position: relative;
+
+
     display: flex;
-
-}
-
-  navMobile{
-    overflow: hidden;
-    display: flex;
-    position: fixed;
-    z-index: 1000;
-    bottom: 0;
-    list-style: none;
-    width: 100vw;
-user-select: none;
-    height: 4rem;
-    justify-content: space-around;
-    align-items: center;
-background: #000000;
-box-shadow: 0rem 9rem 5rem 10rem rgb(0, 0, 0);
-
-  }
-  navMobile a{
-text-decoration: none;
-color: rgb(255, 255, 255);
-transition: .2s;
-position: relative;
-
-
-display: flex;
-text-align: center;
-justify-content: center;
-align-items: center;
-  }
-  navMobile a:hover{
-    color: var(--accent);
-
-    
-
-  }
-  navMobile span{
-    
-    font-size: 10rem;
-  }
-
-    .member{
-scroll-snap-align: center;
-
-    width:100vw;
-    height: auto;
-    border-radius: 0px !important;
- 
- 
+    text-align: center;
     justify-content: center;
-    align-items: flex-start;
-    transition: 400ms;
+    align-items: center;
+    }
+    navMobile a:hover{
+        color: var(--accent);
+
+        
+
+    }
+    navMobile span{
+        
+        font-size: 10rem;
+    }
+
+        .member{
+    scroll-snap-align: center;
+
+        width:100vw;
+        height: auto;
+        border-radius: 0px !important;
+    
+    
+        justify-content: center;
+        align-items: flex-start;
+        transition: 400ms;
 
 
-}
+    }
 
 
-.memberCard{
-    border: none;
-    backdrop-filter: blur(6px);
-    color: #ffffff !important;
+    .memberCard{
+        border: none;
+        backdrop-filter: blur(6px);
+        color: #ffffff !important;
 
-width: 95vw;
-height: 95vw;
-border-radius: 0px !important;
+    width: 95vw;
+    height: 95vw;
+    border-radius: 0px !important;
 
-}
-.member:hover{
-    transform: none;
-
-
-}
+    }
+    .member:hover{
+        transform: none;
 
 
-
-.dp{
-border-radius: .2rem;
-    object-fit: cover;
-    width: 94vw;
-    height: 94vw;
+    }
 
 
-}
+
+    .dp{
+    border-radius: .2rem;
+        object-fit: cover;
+        width: 94vw;
+        height: 94vw;
+    }
 
 
 
 
 
-.SocialButton{
-  
-    color: #ffffff;
-  position: absolute;
-  height: 2rem !important;
-  width: 4rem !important;
- left: 90% !important;
-
-  bottom:90% !important;
-      text-decoration: none;
-      border-radius: 1rem;
-      font-size: 1.2rem;
-      background: rgba(220, 220, 220, 0);
-      padding: .8rem .8rem;
-
-      transition: none;
-      
-      
-  }
-  .whatsApp:hover{
-    background: rgba(70, 182, 0, 0);
-    color: rgb(0, 123, 224);
-    font-weight: 400;
-}
+    .SocialButton{
+    
+        color: #ffffff;
+        position: absolute;
+        height: 2rem !important;
+        width: 4rem !important;
+        left: 90% !important;
+        bottom:90% !important;
+        text-decoration: none;
+        border-radius: 1rem;
+        font-size: 1.2rem;
+        background: rgba(220, 220, 220, 0);
+        padding: .8rem .8rem;
+        transition: none;
+        
+        
+    }
+    .whatsApp:hover{
+        background: rgba(70, 182, 0, 0);
+        color: rgb(0, 123, 224);
+        font-weight: 400;
+    }
 
 }
 
