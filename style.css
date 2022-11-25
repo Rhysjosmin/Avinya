@@ -455,8 +455,8 @@ footer{
   background-color: #382e2e;
   background-attachment: fixed;
   background-size: cover;
-  /* border-radius: 1rem; */
-  margin: 30px;
+  border-radius: 1rem;
+  /* margin: 30px; */
   height: inherit;
   position: relative;
   padding: 20px;
