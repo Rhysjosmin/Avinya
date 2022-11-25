@@ -152,7 +152,7 @@ cursor: pointer;
 
 #ST{
    
-   margin-top: 8rem;
+   
     width: 100%;
     display: flex;
     justify-content: center;
@@ -196,16 +196,51 @@ border-radius:  2rem 0rem 0rem 2rem;
     display: flex;
 }
 .tabselected{
-
-    background: rgb(4, 145, 239)!important;
+color: #ffffff !important;
+    background: rgb(0, 0, 0)!important;
 }
 nav{
     top: 0 !important;
     backdrop-filter: blur(0);
     background-color: transparent;
 }
+
+#SwitchTab{
+    box-shadow: .4rem .4rem .7rem rgba(0, 0, 0, 0.438);
+    opacity: 1;
+    position: Fixed;
+    z-index: 1000;
+    bottom: 1rem;
+    transition: 200ms;
+   gap: .2rem;
+}
+#SwitchTab:hover{
+
+    opacity: 1;
+}
+
+#SwitchTab div{
+
+    border-radius: 2rem;
+    width: 4rem;
+    height: 1rem ;
+    font-size: .8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
 @media (max-width: 500px) {
 
+    #SwitchTab{
+        opacity: .2;
+        bottom: 4.4rem;
+     
+  
+    }
+    #SwitchTab:hover{
+        opacity: 1;
+    }
+ 
     .section-header{
     font-size: 2rem !important;
     white-space: wrap;
