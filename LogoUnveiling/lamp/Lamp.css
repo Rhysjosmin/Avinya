@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;500;700;900&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #B1AFB1;
+}
+
+:root {
+  --Radius:4px;
+}
+
+#Name {
+  font-size: 3em;
+  z-index: 10;
+  color: rgb(255, 255, 255);
+  align-self: center;
+  justify-self: center;
+  position: fixed;
+  letter-spacing: 2px;
+  text-shadow: 0.5vh 0.5vh 0vh black;
+}
+
+#LogoRev {
+  display: block;
+  position: fixed;
+  bottom: 1%;
+  left: 1%;
+  z-index: 10000;
+}
+
+.Main {
+  z-index: 1;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Main video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+.changeVid {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  bottom: 1%;
+  right: 1%;
+  gap: 0.2em;
+  border-radius: var(--Radius);
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  display: none;
+  font-size: 1em;
+  background: rgb(255, 255, 255);
+  border-radius: var(--Radius);
+  border: 1px solid rgba(31, 31, 31, 0.566);
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  width: 20rem;
+  transition: 300ms;
+}
+button:hover {
+  translate: 0px -2px;
+  background: #55ffa1;
+}
+
+.disappear {
+  transition: all 0.3s;
+  opacity: 20%;
+}
+.disappear:hover {
+  opacity: 100%;
+}
