@@ -7,6 +7,7 @@
 
 body {
   background: #B1AFB1;
+  transition: 500ms;
 }
 
 :root {
