@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300;400&family=Suez+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Stoke:wght@300;400&family=Suez+One&display=swap');
 
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
@@ -548,16 +548,32 @@ video {
   position: relative;
 }
 
+.-bottom-10{
+  bottom: -2.5rem;
+}
+
+.-bottom-12{
+  bottom: -3rem;
+}
+
+.-bottom-8{
+  bottom: -2rem;
+}
+
 .bottom-0{
   bottom: 0px;
 }
 
-.bottom-40{
-  bottom: 10rem;
+.bottom-72{
+  bottom: 18rem;
 }
 
-.left-20{
-  left: 5rem;
+.bottom-\[-2em\]{
+  bottom: -2em;
+}
+
+.left-16{
+  left: 4rem;
 }
 
 .left-32{
@@ -568,20 +584,20 @@ video {
   left: 11rem;
 }
 
-.left-64{
-  left: 16rem;
+.left-5{
+  left: 1.25rem;
 }
 
-.left-96{
-  left: 24rem;
+.left-56{
+  left: 14rem;
+}
+
+.right-24{
+  right: 6rem;
 }
 
 .right-32{
   right: 8rem;
-}
-
-.right-64{
-  right: 16rem;
 }
 
 .top-16{
@@ -594,10 +610,6 @@ video {
 
 .top-5{
   top: 1.25rem;
-}
-
-.bottom-\[-2em\]{
-  bottom: -2em;
 }
 
 .z-0{
@@ -614,6 +626,10 @@ video {
 
 .col-span-2{
   grid-column: span 2 / span 2;
+}
+
+.mt-12{
+  margin-top: 3rem;
 }
 
 .mt-32{
@@ -636,12 +652,12 @@ video {
   height: 5rem;
 }
 
-.h-32{
-  height: 8rem;
+.h-24{
+  height: 6rem;
 }
 
-.h-16{
-  height: 4rem;
+.h-32{
+  height: 8rem;
 }
 
 .min-h-screen{
@@ -696,130 +712,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.animate-text-popup{
-  animation: TextPopup .4s ease-out;
-}
-
-.animate-\[wiggle_1s_ease-in-out_infinite\]{
-  animation: wiggle 1s ease-in-out infinite;
-}
-
-.animate-\[TextPopup_1s_ease-in-out_infinite\]{
-  animation: TextPopup 1s ease-in-out infinite;
-}
-
-.animate-\[TextPopup_0\.3s_ease-in-out_infinite\]{
-  animation: TextPopup 0.3s ease-in-out infinite;
-}
-
-.animate-\[TextPopup_0\.3s_ease-in-out\]{
-  animation: TextPopup 0.3s ease-in-out;
-}
-
-.animate-\[TextPopup_0\.3s_ease-out\]{
-  animation: TextPopup 0.3s ease-out;
-}
-
-.animate-\[TextPopup_0\.3s_0s_ease-out\]{
-  animation: TextPopup 0.3s 0s ease-out;
-}
-
-.animate-\[TextPopup_0\.3s_1\.5s_ease-out\]{
-  animation: TextPopup 0.3s 1.5s ease-out;
-}
-
-.animate-\[TextPopup_0\.3s_1s_ease-out\]{
-  animation: TextPopup 0.3s 1s ease-out;
-}
-
-.animate-\[TextPopup_0\.3s_2s_ease-out\]{
-  animation: TextPopup 0.3s 2s ease-out;
-}
-
-.animate-\[TextPopup_0\.3s_\.5s_ease-out\]{
-  animation: TextPopup 0.3s .5s ease-out;
-}
-
-.animate-\[TextPopup_0\.3s_\.5s_ease-out_forwards\]{
-  animation: TextPopup 0.3s .5s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.3s_0s_ease-out_forwards\]{
-  animation: TextPopup 0.3s 0s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.3s_1\.5s_ease-out_forwards\]{
-  animation: TextPopup 0.3s 1.5s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.3s_1s_ease-out_forwards\]{
-  animation: TextPopup 0.3s 1s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.3s_\.5s_ease-out_forward\]{
-  animation: TextPopup 0.3s .5s ease-out forward;
-}
-
-.animate-\[TextPopup_0\.3s_0s_ease-out_forward\]{
-  animation: TextPopup 0.3s 0s ease-out forward;
-}
-
-.animate-\[TextPopup_0\.3s_1\.5s_ease-out_forward\]{
-  animation: TextPopup 0.3s 1.5s ease-out forward;
-}
-
-.animate-\[TextPopup_0\.3s_1s_ease-out_forward\]{
-  animation: TextPopup 0.3s 1s ease-out forward;
-}
-
-.animate-\[TextPopup_0\.2s_1\.5s_ease-out_forwards\]{
-  animation: TextPopup 0.2s 1.5s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.4s_\.5s_ease-out_forwards\]{
-  animation: TextPopup 0.4s .5s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.5s_0s_ease-out_forwards\]{
-  animation: TextPopup 0.5s 0s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.4s_0s_ease-out_forwards\]{
-  animation: TextPopup 0.4s 0s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.4s_1\.5s_ease-out_forwards\]{
-  animation: TextPopup 0.4s 1.5s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.4s_1s_ease-out_forwards\]{
-  animation: TextPopup 0.4s 1s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.2s_\.2s_ease-out_forwards\]{
-  animation: TextPopup 0.2s .2s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.2s_\.4s_ease-out_forwards\]{
-  animation: TextPopup 0.2s .4s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.2s_\.6s_ease-out_forwards\]{
-  animation: TextPopup 0.2s .6s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.2s_0s_ease-out_forwards\]{
-  animation: TextPopup 0.2s 0s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.2s_\.1s_ease-out_forwards\]{
-  animation: TextPopup 0.2s .1s ease-out forwards;
-}
-
-.animate-\[TextPopup_0\.2s_\.3s_ease-out_forwards\]{
-  animation: TextPopup 0.2s .3s ease-out forwards;
-}
-
 .animate-\[TextPopup_0\.4s_\.1s_ease-out_forwards\]{
   animation: TextPopup 0.4s .1s ease-out forwards;
 }
@@ -832,12 +724,12 @@ video {
   animation: TextPopup 0.4s .3s ease-out forwards;
 }
 
-.animate-\[TextPopup_0\.4s_\.3s_ease-in-out_forwards\]{
-  animation: TextPopup 0.4s .3s ease-in-out forwards;
+.animate-\[TextPopup_0\.4s_0s_ease-out_forwards\]{
+  animation: TextPopup 0.4s 0s ease-out forwards;
 }
 
-.grid-cols-3{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .items-center{
@@ -848,12 +740,12 @@ video {
   justify-content: center;
 }
 
-.overflow-hidden{
-  overflow: hidden;
+.gap-4{
+  gap: 1rem;
 }
 
-.rounded-3xl{
-  border-radius: 1.5rem;
+.overflow-hidden{
+  overflow: hidden;
 }
 
 .bg-\[\#111111\]{
@@ -875,14 +767,6 @@ video {
   padding: 3rem;
 }
 
-.p-3{
-  padding: 0.75rem;
-}
-
-.p-32{
-  padding: 8rem;
-}
-
 .p-4{
   padding: 1rem;
 }
@@ -891,12 +775,20 @@ video {
   padding: 1.25rem;
 }
 
+.p-8{
+  padding: 2rem;
+}
+
 .font-Stoke{
   font-family: Stoke, serif;
 }
 
 .font-SuezOne{
   font-family: Suez One, serif;
+}
+
+.font-NothingYouCouldDo{
+  font-family: Nothing You Could Do, cursive;
 }
 
 .text-2xl{
@@ -912,6 +804,11 @@ video {
 .text-5xl{
   font-size: 3rem;
   line-height: 1;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .text-xl{
@@ -974,4 +871,53 @@ video {
 .hover\:bg-\[\#feffcb\]:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(254 255 203 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:bottom-40{
+    bottom: 10rem;
+  }
+
+  .md\:left-20{
+    left: 5rem;
+  }
+
+  .md\:left-64{
+    left: 16rem;
+  }
+
+  .md\:left-96{
+    left: 24rem;
+  }
+
+  .md\:right-64{
+    right: 16rem;
+  }
+
+  .md\:h-32{
+    height: 8rem;
+  }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px){
+  .lg\:absolute{
+    position: absolute;
+  }
+
+  .lg\:bottom-0{
+    bottom: 0px;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:p-32{
+    padding: 8rem;
+  }
 }

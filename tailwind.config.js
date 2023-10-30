@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     fontFamily:{
       'Stoke': ['Stoke', 'serif'],
-      'SuezOne': ['Suez One', 'serif']
+      'SuezOne': ['Suez One', 'serif'],
+ 
+      'NothingYouCouldDo': ['Nothing You Could Do', 'cursive']
     },
     extend:{
       animation:{
