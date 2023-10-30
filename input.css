@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Stoke:wght@300;400&family=Suez+One&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes TextPopup {
+    0% {bottom:-2em}
+    100%{bottom:0em}
+}
