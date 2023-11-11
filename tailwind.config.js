@@ -5,7 +5,6 @@ module.exports = {
     fontFamily:{
       'Stoke': ['Stoke', 'serif'],
       'SuezOne': ['Suez One', 'serif'],
- 
       'NothingYouCouldDo': ['Nothing You Could Do', 'cursive']
     },
     extend:{
