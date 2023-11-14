@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Stoke:wght@300;400&family=Suez+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&family=Stoke:wght@300;400&family=Suez+One&display=swap");
 
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
@@ -588,8 +588,8 @@ video {
   left: 1.25rem;
 }
 
-.left-56{
-  left: 14rem;
+.left-72{
+  left: 18rem;
 }
 
 .right-24{
@@ -660,8 +660,20 @@ video {
   height: 8rem;
 }
 
+.h-8{
+  height: 2rem;
+}
+
+.h-10{
+  height: 2.5rem;
+}
+
 .min-h-screen{
   min-height: 100vh;
+}
+
+.w-10{
+  width: 2.5rem;
 }
 
 .w-36{
@@ -692,23 +704,20 @@ video {
   width: 100vw;
 }
 
+.w-12{
+  width: 3rem;
+}
+
+.w-24{
+  width: 6rem;
+}
+
+.w-16{
+  width: 4rem;
+}
+
 .-rotate-\[8deg\]{
   --tw-rotate: -8deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-2{
-  --tw-rotate: 2deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-6{
-  --tw-rotate: 6deg;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.rotate-\[-4deg\]{
-  --tw-rotate: -4deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -736,12 +745,20 @@ video {
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
 .justify-center{
   justify-content: center;
 }
 
 .gap-4{
   gap: 1rem;
+}
+
+.gap-2{
+  gap: 0.5rem;
 }
 
 .overflow-hidden{
@@ -763,6 +780,16 @@ video {
   background-color: rgb(252 255 108 / var(--tw-bg-opacity));
 }
 
+.bg-pink-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 168 212 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#b41313\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(180 19 19 / var(--tw-bg-opacity));
+}
+
 .p-12{
   padding: 3rem;
 }
@@ -779,16 +806,16 @@ video {
   padding: 2rem;
 }
 
+.font-NothingYouCouldDo{
+  font-family: Nothing You Could Do, cursive;
+}
+
 .font-Stoke{
   font-family: Stoke, serif;
 }
 
 .font-SuezOne{
   font-family: Suez One, serif;
-}
-
-.font-NothingYouCouldDo{
-  font-family: Nothing You Could Do, cursive;
 }
 
 .text-2xl{
@@ -860,11 +887,11 @@ video {
 
 @keyframes TextPopup {
   0% {
-    bottom:-2em
+    bottom: -2em;
   }
 
-  100%{
-    bottom:0em
+  100% {
+    bottom: 0em;
   }
 }
 
